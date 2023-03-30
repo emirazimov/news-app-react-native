@@ -20,7 +20,7 @@ const PostView = styled.View`
 const PostImage = styled.Image`
   width: 60px;
   height: 60px;
-  border-radius: 50%;
+  border-radius: 20px;
   margin-right: 12px;
 `
 const PostTitle = styled.Text`
@@ -29,7 +29,7 @@ const PostTitle = styled.Text`
 `
 const PostDetails = styled.View`
   flex-direction: column;
-  flex-grow: 1;
+  flex: 1;
   justify-content: center;
 `
 
@@ -47,7 +47,7 @@ export const Post = ({ title, imageUrl, createdAt }) => {
           uri: imageUrl,
         }}
       />
-      <PostDetails></PostDetails>
+      <PostDetails>
         <PostTitle>{title}</PostTitle>
         <PostDate>{createdAt}</PostDate>
       </PostDetails>
